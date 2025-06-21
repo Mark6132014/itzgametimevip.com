@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Itzgametime Directory
+    </title>
+    <link rel="shortcut icon" href="https://itzgametime-vip.w3spaces.com/3D_Pizza.png">
+    <style>
+        html {
+    background: linear-gradient(200deg, red, darkred);
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: red darkred;
+}
+body {
+    font-family: 'Segoe UI Light', Segoe UI, Arial;
+}
+span::selection, p::selection, a::selection, img::selection, input::selection {
+    background: rgba(255, 0, 0, 0.541);
+}
+.container {
+    text-align: center;
+    font-family: 'Segoe UI Light', Segoe UI, Arial;
+}
+a {
+    background: transparent;
+    border: none;
+    box-shadow: 0 0 5px white;
+    border-radius: 8px;
+    text-shadow: 0 0 5px red;
+    color: white;
+}
+.website {
+    background: transparent;
+    border: none;
+    box-shadow: 0 0 5px transparent;
+    border-radius: 8px;
+    text-shadow: 0 0 5px red;
+    color: white;
+}
+.website img {
+    transition: 0.5s ease-in-out;
+}
+.website img:hover {
+    box-shadow: 0 0 5px white;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img height="150" width="280" src="https://itzgametime-vip.w3spaces.com/3D_Pizza.png">
+        <br>
+        <center><span style="font-size: 2em;">
+            🍕Itzgametime Vip
+        </span>
+        <br>
+        <span id="description">
+            🍕Itzgametime Vip is the best!
+        </span></center>
+        <span style="color: transparent; cursor: default;">
+            ----------------------------------------------------------------------------------------------------
+        </span>
+        <br>
+        <br>
+        <input id="search" list="searches" style="width: 100%; resize: none; background: white; color: black; font-family: Arial, sans-serif; overflow: hidden; border: none; border-radius: 3px;" placeholder="Google Search or type a URL...">
+        <datalist id="searches">
+            <option value="🍕Itzgametime Vip"></option>
+            <option value="https://itzgametime-vip.w3spaces.com"></option>
+        </datalist>
+    <button type="submit" id="searchBtn">Search</button>
+        <br>
+        <br>
+        <a class="website" href="https://itzgametime-vip.w3spaces.com" title="Itzgametime Vip">
+            <img height="50" width="50" src="icon.png" style="background:rgba(255, 0, 0, 0.541); border-radius: 50%;">
+            <p>
+                Itzgametime Vip
+            </p>
+        </a>
+	    <a class="copy" href="javascript:void(0)">
+	        <h2>Copy</h2>
+        </a>
+        <a class="itzgametime" href="itzgametime://">
+            <h2>Itzgametime</h2>
+        </a>
+        <hr>
+        <a href="https://gmail.com">
+            Gmail
+        </a>
+        <a href="https://images.google.com">
+            Google Images
+        </a>
+        <a href="https://accounts.google.com">
+            My Google Account
+        </a>
+        <hr>
+        <button id="infoBtn">
+            I want to know you. What is your name?
+        </button>
+    </div>
+    <script>
+        var searchInput = document.getElementById("search");
+var searchButton = document.getElementById("searchBtn");
+document.querySelector(".copy").addEventListener("click", () => {
+    navigator.clipboard.writeText("🍕Itzgametime Vip");
+});
+function search() {
+    let input = document.getElementById("search").value;
+    if (input.startsWith("https://") || input.startsWith("http://")) {
+        if (input == "https://" || input == "http://") {
+            alert("URL does not exist with only the protocol. Try again.");
+        } else {
+            location.assign(input);
+        }
+    } else {
+        location.assign(`https://www.google.com/search?q=${input}`);
+    }
+}
+searchInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        search();
+    }
+});
+searchButton.addEventListener("click", search);
+/* Name */
+var infoBtn = document.getElementById("infoBtn");
+infoBtn.addEventListener("click", () => {
+    var name = prompt("What is your name?", "John Doe");
+    alert("Oh! Hi, " + name + "! It is soooo nice to see you!");
+    var savedInfo = localStorage.setItem("username", name);
+});
+var information = localStorage.getItem("username");
+if (information) {
+    document.getElementById("description").innerText = "Nice to see you, " + information + ". I am 🍕Itzgametime Vip";
+} else {
+    document.getElementById("description").innerText = "🍕Itzgametime Vip is a great person to be with!";
+}
+var theme = new Audio('https://w3schools.com/graphics/gametheme.mp3');
+theme.play();
+theme.loop = true;
+    </script>
+</body>
+</html>
