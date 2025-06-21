@@ -1,0 +1,341 @@
+ <html><head>
+        <meta content="dark" name="color-scheme">
+        <script src="scripts.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Press Start 2P" rel="stylesheet">
+        <title>🍕Itzgametime Vip</title>
+            <link rel="shortcut icon" href="3D_Pizza.png">
+            <meta charset="UTF-8">
+            <link rel="manifest" href="info.json">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script>
+        //if browser support service worker
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('https://itzgametimevip.com/sw.js');
+        };
+      </script>
+      <script type="module">
+        import ItzgametimeVipIMPORT from "https://itzgametimevip.com/module/import.js"
+        ItzgametimeVipIMPORT();
+        </script>
+    </head>
+    <body>
+      <button id="downloadImportant" style="background: linear-gradient(red, darkred); border: 1px solid white; color: white; font-weight: bold; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 0; border-bottom-right-radius: 0px; transform: rotate(90deg); position: fixed; top: 50%; left: -5%;">Download this Website</button>
+
+    <script>
+        // List of important files
+        const importantFiles = [
+            { name: 'index.html', url: 'https://itzgametime-vip.w3spaces.com/' },
+            { name: 'style.css', url: 'https://itzgametime-vip.w3spaces.com/style.css' },
+            { name: 'scripts.js', url: 'https://itzgametime-vip.w3spaces.com/scripts.js' },
+            { name: 'sw.js', url: 'https://itzgametime-vip.w3spaces.com/sw.js' },
+            { name: '3d-pizza.svg', url: 'https://itzgametime-vip.w3spaces.com/3d-pizza.svg' },
+            { name: '3d.html', url: 'https://itzgametime-vip.w3spaces.com/3d.html' },
+            { name: 'blur.html', url: 'https://itzgametime-vip.w3spaces.com/blur.html' },
+            { name: 'hacking.html', url: 'https://itzgametime-vip.w3spaces.com/hacking.html' },
+            { name: 'info.json', url: 'https://itzgametime-vip.w3spaces.com/info.json' },
+            { name: 'Itzgametime_Vip_PDF.pdf', url: 'https://itzgametime-vip.w3spaces.com/Itzgametime_Vip_PDF.pdf' },
+            { name: 'itzgametimevip.html', url: 'https://itzgametime-vip.w3spaces.com/itzgametimevip.html' },
+            { name: 'oobe.html', url: 'https://itzgametime-vip.w3spaces.com/oobe.html' },
+            { name: 'text.html', url: 'https://itzgametime-vip.w3spaces.com/text.html' },
+            { name: '192pizza.png', url: 'https://itzgametime-vip.w3spaces.com/192pizza.png' },
+            { name: '3D_Pizza.png', url: 'https://itzgametime-vip.w3spaces.com/3D_Pizza.png' },
+            { name: '91IrXgOzOpL._AC_UL320_.jpg', url: 'https://itzgametime-vip.w3spaces.com/91IrXgOzOpL._AC_UL320_.jpg' },
+            { name: 'gummies.png', url: 'https://itzgametime-vip.w3spaces.com/gummies.png' },
+            { name: 'haribo_gold_bears_yay.jpg', url: 'https://itzgametime-vip.w3spaces.com/hario_gold_bears_yay.jpg' },
+            { name: 'pizza.png', url: 'https://itzgametime-vip.w3spaces.com/pizza.png' }
+            // Add more important files as needed
+        ];
+
+        document.getElementById('downloadImportant').addEventListener('click', async function() {
+            const zip = new JSZip();
+            const folder = zip.folder("content");
+            const itzgametimeFolder = folder.folder("itzgametime");
+            var itzgametimeFileResponse = await fetch("https://itzgametime-vip.w3spaces.com/itzgametime/index.html");
+            var itzgametimeFileBlob = await itzgametimeFileResponse.blob();
+            itzgametimeFolder.file("index.html", itzgametimeFileBlob);
+
+            for (const file of importantFiles) {
+                try {
+                    const fileResponse = await fetch(file.url);
+                    if (!fileResponse.ok) throw new Error('Network response was not ok');
+                    const blob = await fileResponse.blob();
+                    folder.file(file.name, blob);
+                } catch (error) {
+                    console.error('Error downloading file:', error);
+                }
+            }
+
+            zip.generateAsync({ type: "blob" })
+                .then(content => {
+                    saveAs(content, "Itzgametime Vip Website.zip");
+                })
+                .catch(error => {
+                    console.error('Error generating ZIP file:', error);
+                });
+        });
+    </script>
+      <span style="font-family: Segoe UI Light, Segoe UI, Arial; position: absolute; top: 0; right: 0; z-index: 1; color: red; background: black;" id="titleTop">Itzgametime Vip&#127829;</span>
+      <script>
+        if (document.querySelector('#titleTop').innerHTML.includes("Itzgametime")) {
+        document.querySelector('#titleTop').innerHTML += "!";
+        }
+        </script>
+    <div class="bar" style="resize: both;">
+		<img src="gummies.png" height="50" width="100" style="position: fixed; top: 0; left: 0; transform: rotate(-50deg);">
+		<img src="pizza.png" height="50" width="50" style="position: fixed; top: 0; left: 80px; transform: rotate(-30deg); border-radius: 50%;">
+        <p style="font-family: 'Press Start 2P'; background: rgba(255, 0, 0, 0.541); color: white;" dir="rtl" id="updates">
+            !!!Fullscreen, Data, Download, Directory, Auto-play
+            </p>
+        </div>
+            <iframe class="itzgametime" src="https://markcholloway0304.wixsite.com/itzgametime-vip" style="resize: both"></iframe>
+                <hr>
+                <iframe height="100" width="500" style="border: none;" src="hacking.html"></iframe>
+                <hr>
+                <a target="blank" href="oobe.html">
+                oobe.html
+                </a>
+                <a target="blank" href="blur.html">
+                    Blur.html
+                    </a>
+                    <a target="blank" href="3d.html">
+                        3d.html
+                        </a>
+                        <a target="blank" href="Itzgametime_Vip_PDF.pdf">
+                            Itzgametime_Vip_PDF.pdf
+                            </a>
+                            <a target="blank" href="text.html">
+                                Gradient Text.html
+                                </a>
+                                <a target="blank" href="hacking.html">
+                                    Hacking.html
+                                    </a>
+                                    <a href="https://itzgametimevip-merch.myspreadshop.com">
+                                    Itzgametime Vip Merch!</a>
+                <hr>
+				<iframe height="300" width="100" src="oobe.html"></iframe>
+				<hr>
+				<form action="javascript:input()">
+                <itzgametimevip style="font-size: 2em;" contenteditable="true" id="itzgametimevip">
+                        &#127829;Itzgametime Vip
+                </itzgametimevip>
+				<button type="submit">
+					Submit
+				</button>
+        <button onclick="setPinnedPositionItemToLocalStorage();">
+          Pin Draggable Position
+        </button>
+				</form>
+				<button onclick="document.designMode = 'on';">Hey, Want to see a secret? Click here!</button>
+                <hr>
+               <itzgametimevip id="words">
+               </itzgametimevip>
+                <hr>
+                <audio autoplay controls loop style="display: none;">
+                  <source src="https://www.w3schools.com/graphics/gametheme.mp3">
+                </audio>
+				<hr>
+                <p>
+                    Oh, and also, HERE ARE SOME <itzgametimevip>Images from Itzgametime Vip!</itzgametimevip></p>
+                    <hr>
+                    <img src="3D_Pizza.png">
+					<hr>
+                    <img src="91IrXgOzOpL._AC_UL320_.jpg">
+                    <hr>
+                    <img src="pizza.jpeg">
+					<hr>
+                    <img src="car.jpg" height="200" width="500">
+                    <hr>
+                    <img height="300" width="500" src="pizza2.jpg">
+                    <hr>
+                    <img src="3d-pizza.svg">
+                    <hr>
+                    <img src="usaFlag.jpg">
+                    <hr>
+					<img src="haribo_gold_bears_yay.jpg">
+					<hr>
+				<hr>
+        <script>
+                function fullscreen() {
+                if (document.fullscreen) {
+                document.exitFullscreen().catch((e) => {
+                    console.log(e);
+                });
+                } else {
+                document.documentElement.requestFullscreen().catch((e) => {
+                    console.log(e);
+                });
+                }
+                }
+            </script>
+				<div class="draggable" oncontextmenu="fullscreen()">
+					<style>
+						@keyframes bounce {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-20px);
+                }
+            }
+            .draggable img:hover {
+                animation: bounce 0.6s ease infinite;
+            }
+            .draggable {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(red, darkred);
+      border-radius: 50%;
+      border: 2px solid white;
+      box-shadow: 0 0 10px red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+</style>
+<script>
+	const d = document.getElementsByClassName("draggable");
+
+for (let i = 0; i < d.length; i++) {
+  d[i].style.position = "relative";
+}
+
+function filter(e) {
+  let target = e.target;
+
+  if (!target.classList.contains("draggable")) {
+    return;
+  }
+
+  target.moving = true;
+
+  //NOTICE THIS 👇 Check if Mouse events exist on users' device
+  if (e.clientX) {
+    target.oldX = e.clientX; // If they exist then use Mouse input
+    target.oldY = e.clientY;
+  } else {
+    target.oldX = e.touches[0].clientX; // Otherwise use touch input
+    target.oldY = e.touches[0].clientY;
+  }
+  //NOTICE THIS 👆 Since there can be multiple touches, you need to mention which touch to look for, we are using the first touch only in this case
+
+  target.oldLeft = window.getComputedStyle(target).getPropertyValue('left').split('px')[0] * 1;
+  target.oldTop = window.getComputedStyle(target).getPropertyValue('top').split('px')[0] * 1;
+
+  document.onmousemove = dr;
+  //NOTICE THIS 👇
+  document.ontouchmove = dr;
+  //NOTICE THIS 👆
+
+  function dr(event) {
+    event.preventDefault();
+
+    if (!target.moving) {
+      return;
+    }
+    //NOTICE THIS 👇
+    if (event.clientX) {
+      target.distX = event.clientX - target.oldX;
+      target.distY = event.clientY - target.oldY;
+    } else {
+      target.distX = event.touches[0].clientX - target.oldX;
+      target.distY = event.touches[0].clientY - target.oldY;
+    }
+    //NOTICE THIS 👆
+
+    target.style.left = target.oldLeft + target.distX + "px";
+    target.style.top = target.oldTop + target.distY + "px";
+  }
+
+  function endDrag() {
+    target.moving = false;
+  }
+  target.onmouseup = endDrag;
+  //NOTICE THIS 👇
+  target.ontouchend = endDrag;
+  //NOTICE THIS 👆
+}
+document.onmousedown = filter;
+//NOTICE THIS 👇
+document.ontouchstart = filter;
+//NOTICE THIS 👆
+</script>
+  <img src="3D_Pizza.png" height="50" width="80">
+</div>
+<script>
+    var draggable = document.querySelector(".draggable");
+    function setPinnedPositionItemToLocalStorage(){
+    
+    
+    localStorage.removeItem("draggable-left");
+    localStorage.removeItem("draggable-top");
+    localStorage.setItem("draggable-left", draggable.style.left);
+    localStorage.setItem("draggable-top", draggable.style.top);
+    
+}
+    
+
+  // RETRIEVES THE DIV'S POSITION FROM LOCAL STORAGE  
+    
+    (function RetrieveValueFromLocalStorage() {
+    
+    draggable.style.top = localStorage.getItem("draggable-top");
+    draggable.style.left = localStorage.getItem("draggable-left");
+
+//immediate function is called on page loading and sets input value from localstorage
+})();
+  </script>
+                    <hr>
+                    <input type="radio" style="accent-color: red;">
+                    <hr>
+                    <itzgametimevip>
+                        Need more security? Use our reCAPTCHA!
+                        </itzgametimevip>
+                        <iframe style="height: 300px; width: 100%" src="https://www.google.com/recaptcha/enterprise/anchor?ar=1&amp;k=6Ld0J8IcAAAAANyrnxzrRlX1xrrdXsOmsepUYosy&amp;co=aHR0cHM6Ly9tYXJrY2hvbGxvd2F5MDMwNC53aXhzaXRlLmNvbTo0NDM.&amp;hl=en&amp;v=vm_YDiq1BiI3a8zfbIPZjtF2&amp;theme=light&amp;size=normal&amp;cb=x0fbuyqru2r6"></iframe>
+                        <script>
+                          var i = 0;
+function scroll() {
+    if (i > 255) {
+    }
+    else {
+  i += 1;
+  window.scrollTo(0, i);
+  setTimeout(scroll, 10.3);
+    }
+}
+scroll();
+                          </script>
+                          <img height="150" width="190" src="3D_Pizza.png" id="screenshot" style="background: linear-gradient(200deg, red, darkred); border-radius: 50%; height: 70px; width: 70px; border: 1px solid white; position: fixed; bottom: 30%; right: 2%; cursor: pointer;">
+    <script>
+      function nothing() {}
+        document.querySelector("#screenshot").addEventListener("click", async () => {
+    try {
+        // Request screen capture
+        const stream = await navigator.mediaDevices.getDisplayMedia({ video: { cursor: "always" } });
+        const track = stream.getVideoTracks()[0];
+        const imageCapture = new ImageCapture(track);
+
+        // Take a screenshot
+        const bitmap = await imageCapture.grabFrame();
+        track.stop();
+
+        // Create a canvas to draw the screenshot
+        const canvas = document.createElement('canvas');
+        canvas.width = bitmap.width;
+        canvas.height = bitmap.height;
+        const context = canvas.getContext('2d');
+        context.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+        setTimeout(nothing, 1000);
+        // Convert the canvas to an image and download it
+        const link = document.createElement('a');
+        link.href = canvas.toDataURL('image/png');
+        link.download = 'screenshot.png';
+        link.click();
+    } catch (err) {
+        console.error("Error: " + err);
+    }
+});
+    </script>
+    
+</body><input id="__ChromeDeviceID_PCM" type="hidden"><input id="__CID_PCM" type="hidden"></html>
