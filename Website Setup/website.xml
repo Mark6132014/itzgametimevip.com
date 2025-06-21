@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appcmd>
+    <SITE SITE.NAME="itzgametimevip.com" SITE.ID="2" bindings="http/*:80:www.itzgametimevip.com,http/47.38.98.96:80:itzgametimevip.com,http/47.38.98.96:80:www.itzgametimevip.com,https/47.38.98.96:443:itzgametimevip.com,https/192.168.50.111:443:itzgametimevip.com,https/47.38.98.96:443:www.itzgametimevip.com,https/192.168.50.111:443:www.itzgametimevip.com,https/192.168.50.111:443:server.itzgametimevip.com" state="Started">
+        <site name="itzgametimevip.com" id="2">
+            <bindings>
+                <binding protocol="http" bindingInformation="*:80:www.itzgametimevip.com" />
+                <binding protocol="http" bindingInformation="47.38.98.96:80:itzgametimevip.com" />
+                <binding protocol="http" bindingInformation="47.38.98.96:80:www.itzgametimevip.com" />
+                <binding protocol="https" bindingInformation="47.38.98.96:443:itzgametimevip.com" sslFlags="0" />
+                <binding protocol="https" bindingInformation="192.168.50.111:443:itzgametimevip.com" sslFlags="0" />
+                <binding protocol="https" bindingInformation="47.38.98.96:443:www.itzgametimevip.com" sslFlags="0" />
+                <binding protocol="https" bindingInformation="192.168.50.111:443:www.itzgametimevip.com" sslFlags="0" />
+                <binding protocol="https" bindingInformation="192.168.50.111:443:server.itzgametimevip.com" sslFlags="0" />
+            </bindings>
+            <limits />
+            <logFile>
+                <customFields>
+                </customFields>
+            </logFile>
+            <traceFailedRequestsLogging />
+            <hsts />
+            <applicationDefaults />
+            <virtualDirectoryDefaults />
+            <ftpServer>
+                <connections />
+                <security>
+                    <dataChannelSecurity />
+                    <commandFiltering>
+                    </commandFiltering>
+                    <ssl />
+                    <sslClientCertificates />
+                    <authentication>
+                        <anonymousAuthentication />
+                        <basicAuthentication />
+                        <clientCertAuthentication />
+                        <customAuthentication>
+                            <providers>
+                            </providers>
+                        </customAuthentication>
+                    </authentication>
+                    <customAuthorization>
+                        <provider />
+                    </customAuthorization>
+                </security>
+                <customFeatures>
+                    <providers>
+                    </providers>
+                </customFeatures>
+                <messages />
+                <fileHandling />
+                <firewallSupport />
+                <userIsolation>
+                    <activeDirectory />
+                </userIsolation>
+                <directoryBrowse />
+                <logFile />
+            </ftpServer>
+            <application path="/" applicationPool="itzgametimevip.com">
+                <virtualDirectoryDefaults />
+                <virtualDirectory path="/" physicalPath="C:\Websites\itzgametimevip.com\wwwroot" />
+                <virtualDirectory path="/itzgametime" physicalPath="C:\Websites\itzgametimevip.com\wwwroot\itzgametime" />
+                <virtualDirectory path="/wwwroot" physicalPath="C:\Websites\itzgametimevip.com\wwwroot" />
+                <virtualDirectory path="/mcserver" physicalPath="C:\Websites\itzgametimevip.com\mcserver" />
+                <virtualDirectory path="/mctexture" physicalPath="C:\Websites\itzgametimevip.com\mcserver\Itzgametime Vip Texture Pack" />
+            </application>
+        </site>
+    </SITE>
+</appcmd>
